@@ -15,3 +15,8 @@ final skin string parsing needs a a bit of tweeking
 2. Hover over the image (doesnt matter if it is loading) and press the Delete key
 3. When prompt appears in console, press ctrl-v and format as needs
 4. easy money sometimes
+
+# Python requirements (too lazy to put them in txt)
+
+Flask==2.1.2
+Flask-Cors==3.0.10
