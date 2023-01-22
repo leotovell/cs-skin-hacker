@@ -101,7 +101,7 @@ let running = false;
 document.body.addEventListener("keydown", (e) => {
     if(!running){
     let key = e.key;
-    if(key = "Delete"){
+    if(key == "Delete"){
         elements = document.elementsFromPoint(clientX, clientY);
         let i = 0;
         let len = elements.length;
