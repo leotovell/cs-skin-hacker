@@ -8,13 +8,14 @@ cors = CORS(app)
 
 @app.route("/receiver", methods=["POST"])
 def postME():
-    print("Cleint incoming!!")
+    print("Incoming request.")
     data = request.get_json()
     download_image(data)
     if os.path.isfile("image.png"):
         res = rgs("image.png")
     else:
         return jsonify("Image failed to donwload")
+    print("Final answer:", res)
     if res:
         data = jsonify(res)
     else:
