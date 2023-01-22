@@ -144,7 +144,7 @@ function sendData(url){
         // Parse and remove wepaon names:
         preSkinName.innerHTML = `Raw: ${returnedresponse}`
         weapons.forEach(weapon => {
-            returnedresponse = returnedresponse.replace(weapon, "")
+            returnedresponse = returnedresponse.toLocaleLowerCase().replace(weapon, "")
         });
         navigator.clipboard.writeText(returnedresponse)
         skinName.innerHTML = `Final: ${returnedresponse}`;
